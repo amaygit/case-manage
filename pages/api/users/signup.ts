@@ -26,7 +26,7 @@ export default async function handler(req,res){
                 
                 
                 const user = await User.create(req.body);
-                const token = jwt.sign({id : user.id,userType : user.accountType,firstName : user.firstName,email : user.email},"VIKAS",{expiresIn : '1h'})
+                const token = jwt.sign({id : user.id,userType : user.accountType,firstName : user.firstName,email : user.email},"shreyasP",{expiresIn : '1h'})
                 setCookies('auth', token, { req, res, maxAge: 60 * 6 * 24 });
                 res.status(200).json({success:true,data:"Success"})
 
@@ -40,5 +40,5 @@ export default async function handler(req,res){
         default:
             res.status(400).json({success:false})
     }
-    //res.status(200).json({"name":"vikas"})
+    //res.status(200).json({"name":"shreyasP"})
 }

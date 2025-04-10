@@ -25,5 +25,5 @@ export default async function handler(req,res){
         default:
             res.status(400).json({success:false})
     }
-    //res.status(200).json({"name":"vikas"})
+    //res.status(200).json({"name":"shreyasP"})
 }

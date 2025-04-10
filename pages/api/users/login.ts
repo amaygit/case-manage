@@ -19,7 +19,7 @@ export default async function handler(req,res){
                 if(!await bcrpyt.compare(req.body.password,user.password)){
                     res.status(404).json({success:false,msg: "Invalid credentaials"})
                 }
-                const token = jwt.sign({id : user.id,userType : user.accountType,firstName : user.firstName,email : user.email},"VIKAS",{expiresIn : '1h'})
+                const token = jwt.sign({id : user.id,userType : user.accountType,firstName : user.firstName,email : user.email},"shreyasP",{expiresIn : '1h'})
                 
                 
                 
@@ -41,5 +41,5 @@ export default async function handler(req,res){
         default:
             res.status(400).json({success:false})
     }
-    //res.status(200).json({"name":"vikas"})
+    //res.status(200).json({"name":"shreyasP"})
 }

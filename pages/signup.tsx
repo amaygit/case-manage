@@ -36,7 +36,7 @@ interface UserDetails {
 }
 
 const testUserDetails: UserDetails = {
-  email: "vikasvks0112@gmail.com",
+  email: "shreyasPvks0112@gmail.com",
   mobile: 9113725640,
   accountType: 3,
   password: "",

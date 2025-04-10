@@ -26,5 +26,5 @@ export default authenticated( async function handler(req,res){
             }
             break;
     }
-    //res.status(200).json({"name":"vikas"})
+    //res.status(200).json({"name":"shreyasP"})
 })
